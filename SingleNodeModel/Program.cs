@@ -33,8 +33,8 @@ namespace SingleNodeModel
 
             // ---------------------------------------------------------------------------------
             // PINN - FIXED
-            string parameters_sir_fixed = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_fixed.csv";
-            string parameters_sird_fixed = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_fixed.csv";
+            string parameters_sir_fixed = "SingleNodeModel input//parameters_sir_fixed.csv";
+            string parameters_sird_fixed = "SingleNodeModel input//parameters_sird_fixed.csv";
 
             // PINN - FIXED OUTPUT
             if (true)
@@ -48,23 +48,23 @@ namespace SingleNodeModel
             
             // ---------------------------------------------------------------------------------
             // PINN - VARIED
-            string[] parameter_sir_varied_small = new string[] { "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_constant_small.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step1_small.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step2_small.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step1_gamma_step1_small.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_expo_small.csv" };
+            string[] parameter_sir_varied_small = new string[] { "SingleNodeModel input//parameters_sir_beta_constant_small.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step1_small.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step2_small.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step1_gamma_step1_small.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_expo_small.csv" };
 
-            string[] parameter_sir_varied_large = new string[] { "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_constant_large.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step1_large.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step2_large.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_step1_gamma_step1_large.csv",
-                                                                 "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sir_beta_expo_large.csv" };
+            string[] parameter_sir_varied_large = new string[] { "SingleNodeModel input//parameters_sir_beta_constant_large.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step1_large.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step2_large.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_step1_gamma_step1_large.csv",
+                                                                 "SingleNodeModel input//parameters_sir_beta_expo_large.csv" };
 
-            string[] parameter_sird_varied_small = new string[] { "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_beta_constant_small.csv",
-                                                                  "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_beta_step1_small.csv",
-                                                                  "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_beta_step2_small.csv",
-                                                                  "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_beta_step1_gamma_step1_mu_step1_small.csv",
-                                                                  "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel input//parameters_sird_beta_expo_small.csv" };
+            string[] parameter_sird_varied_small = new string[] { "SingleNodeModel input//parameters_sird_beta_constant_small.csv",
+                                                                  "SingleNodeModel input//parameters_sird_beta_step1_small.csv",
+                                                                  "SingleNodeModel input//parameters_sird_beta_step2_small.csv",
+                                                                  "SingleNodeModel input//parameters_sird_beta_step1_gamma_step1_mu_step1_small.csv",
+                                                                  "SingleNodeModel input//parameters_sird_beta_expo_small.csv" };
 
             // PINN - VARIED OUTPUT
             if (true)
@@ -104,8 +104,8 @@ namespace SingleNodeModel
 
             // ---------------------------------------------------------------------------------
             // MONTE CARLO - OVERALL
-            string filename_sir_train = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel output//output_sir_monte_carlo_train.csv";
-            string filename_sir_test = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel output//output_sir_monte_carlo_test.csv";
+            string filename_sir_train = "SingleNodeModel output//output_sir_monte_carlo_train.csv";
+            string filename_sir_test = "SingleNodeModel output//output_sir_monte_carlo_test.csv";
 
             // MONTE CARLO - OVERALL OUTPUT
             if (true)
@@ -132,7 +132,7 @@ namespace SingleNodeModel
             string input_name = parameters_sir_fixed.Split("//")[len_input - 1];
 
             string out_name = "output" + input_name.Substring(10, input_name.Length - 10);
-            string output_sir_fixed = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel output//" + out_name;
+            string output_sir_fixed = "SingleNodeModel output//" + out_name;
 
             rk_sir.WriteCSV(output_sir_fixed, "SIR", param_sir_fixed);
             Console.WriteLine("");
@@ -153,7 +153,7 @@ namespace SingleNodeModel
             string input_name = parameters_sird_fixed.Split("//")[len_input - 1];
 
             string out_name = "output" + input_name.Substring(10, input_name.Length - 10);
-            string output_sird_fixed = "C://Users//yuriy//Google Drive//College//Masters//Thesis//Code//Implementation//SingleNodeModel output//" + out_name;
+            string output_sird_fixed = "SingleNodeModel output//" + out_name;
 
             rk_sird.WriteCSV(output_sird_fixed, "SIRD", param_sird_fixed);
             Console.WriteLine("");
