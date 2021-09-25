@@ -1,0 +1,12 @@
+Model,Hyperparameters,Test MAE,Test MAPE
+Baseline,4 layers / 64 nodes / ReLU / ADAM / 20 epochs / batch size = 32,0.001568,12.796133
+1a,8 layers,0.001797,11.734634
+1b,2 layers,0.00165,13.196546
+2a,128 nodes,0.001599,11.886057
+2b,32 nodes,0.001703,12.997779
+3a,Tanh Activation,0.001784,12.46793
+3b,SeLU Activation,0.001886,12.283133
+4a,batch size = 8,0.001669,12.501982
+4b,batch size = 64,0.001528,12.365832
+5a,RMSProp optimizer,0.001949,13.2985
+5b,NAdam optimizer,0.001453,11.168484
